@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Um site especial para o amor da minha vida">
+    <title>Para o Meu Amor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom right, #ffebee, #f3e5f5);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #ff6473;
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4em;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid rgba(255, 255, 255, 0.75);
+            width: 0;
+            animation: typing 3.5s steps(30, end) forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            from { border-right-color: rgba(255, 255, 255, 0.75); }
+            to { border-right-color: transparent; }
+        }
+
+        /* Floating hearts animation */
+        @keyframes floatingHearts {
+            0% {
+                transform: translateY(0) scale(0.8);
+            }
+            50% {
+                transform: translateY(-20px) scale(1);
+            }
+            100% {
+                transform: translateY(0) scale(0.8);
+            }
+        }
+
+        .heart {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: url('https://img.icons8.com/emoji/48/000000/red-heart.png') no-repeat center;
+            background-size: contain;
+            animation: floatingHearts 2s infinite ease-in-out;
+        }
+
+        .heart1 {
+            top: 0;
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .heart2 {
+            top: 10px;
+            right: 20%;
+            animation-delay: 1s;
+        }
+
+        .heart3 {
+            top: 40px;
+            left: 50%;
+            animation-delay: 1.5s;
+        }
+
+        .intro h2, .quote h2, .gallery h2, .anniversary h2 {
+            font-size: 2.5em;
+            color: #ff6473;
+            margin-bottom: 15px;
+        }
+
+        .intro p, .quote p, .anniversary p {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .gallery, .anniversary {
+            margin: 50px 0;
+        }
+
+        .photos {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .photo {
+            width: 220px;
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .quote {
+            background-color: #ffe6e9;
+            padding: 40px;
+            border-radius: 20px;
+            margin: 50px 0;
+            position: relative;
+        }
+
+        .quote::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background: url('img/heart.svg') no-repeat center;
+            background-size: contain;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 1.5em;
+            color: #555;
+        }
+
+        footer p strong {
+            color: #ff6473;
+        }
+
+        .music {
+            margin: 30px 0;
+        }
+
+        .music audio {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .message {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #fff3e0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .message h2 {
+            color: #ff6473;
+            margin-bottom: 15px;
+        }
+
+        .message p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .anniversary {
+            background-color: #ffe6e9;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Geovana A. Dos Santos Pimenta </h1>
+        <div class="heart heart1"></div>
+        <div class="heart heart2"></div>
+        <div class="heart heart3"></div>
+    </header>
+    
+    <section class="intro">
+        <h2>Feliz Aniversário, Amor!</h2>
+        <p>Este site foi feito especialmente para você, meu amor. Cada detalhe aqui expressa o quanto você é importante para mim, coloquei nossos momentos juntos, fiz com muito carinho e espero que goste muito! </p>
+    </section>
+
+    <section class="gallery">
+        <h2>Simplesmente Ela </h2>
+        <div class="photos">
+            <div class="photo" style="background-image: url('ela1.jpeg');"></div>
+            <div class="photo" style="background-image: url('ela2.jpeg');"></div>
+            <div class="photo" style="background-image: url('ela3.jpeg');"></div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <h2>Uma Frase para Você</h2>
+        <p>"You’re still the one I run to, the one that I need."</p>
+    </section>
+
+    <section class="music">
+        <h2>Música Especial</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/H5v3kku4y6Q" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+    </section>    
+
+    <section class="anniversary">
+        <h2>3 Anos Juntos</h2>
+        <p>Já temos 3 anos de amor, risadas e momentos felizes juntos. Aqui estão alguns dos nossos momentos especiais(que eu tenho registro, logo eu que não tiro foto de nada):</p>
+        <div class="photos">
+            <div class="photo" style="background-image: url('nos2021.jpeg');"></div>
+            <div class="photo" style="background-image: url('nos2021_17.jpeg');"></div>
+            <div class="photo" style="background-image: url('nos2022.jpeg');"></div>
+        </div>
+        <div class="timeline">
+            <p>1. Nossa Primeira Foto Juntos - 21/11/2021</p>
+            <p>2. Meu Primeiro Aniversário com você - 07/09/2021</p>
+            <p>3. Nosso Rolê Chapinha - algum dia de 2022 kk</p>
+            
+        </div>
+    </section>
+
+<!-- Nova imagem com legenda -->
+<section class="love-message">
+    <img src="maca.jpg" alt="Imagem fofa" style="width: 300px; border-radius: 20px; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);">
+    <p style="font-size: 1.5em; color: #ff6473; margin-top: 15px;">Te amo, meu peixinho</p>
+</section>
+
+    <footer>
+        <p>Feito com amor por, <strong>Diogo!</strong></p>
+    </footer>
+</body>
+</html>
